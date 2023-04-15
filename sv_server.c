@@ -70,8 +70,8 @@ int main(int argc, char const *argv[])
     new_time[strlen(new_time) - 1] = '\0';
     fprintf(log_file, "Accepted socket %d from IP %s at %s: %d\n", 
         client,
-        new_time,
         inet_ntoa(client_addr.sin_addr),
+        new_time,
         ntohs(client_addr.sin_port)); 
 
     // Nhan du lieu tu client
